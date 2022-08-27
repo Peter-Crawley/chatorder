@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Out-of-order Disconnect</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content='With Minecraft 1.19 onwards Mojang introduced chat message signing, as part of this the timestamp of a message is included and the server verifies that the message was sent within a reasonable time frame, that being not too old, or not "from the future", if a message fails this check then the user is disconnected.'>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Roboto', sans-serif;
+				max-width: 1024px;
+				margin: auto;
+				padding: 0 16px 0 16px
+			}
+
+			img {
+				display: block;
+				margin: auto
+			}
+
+			td {
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Minecraft 1.19+ Out-of-order Chat Disconnect</h2>
+		<p>With Minecraft 1.19 onwards Mojang introduced chat message signing, as part of this the timestamp of a message is included and the server verifies that the message was sent within a reasonable time frame, that being not too old, or not "from the future", if a message fails this check then the user is disconnected.
+		</p>
+
+		<p>Unfortunately sometimes these disconnects can get a little trigger-happy if your computer's time is out of sync, this happens naturally and computers usually work to keep this in sync, however this can be imperfect and desyncs can and will occur on most systems.</p>
+
+		<p><img src="disconnect.png" alt="Screenshot of disconnect message."></p>
+
+		<p>If someone sent you to this page, its probably because you are having this issue, and we're gonna tell you how to fix it, as well as answer some questions.</p>
+
+		<h3>Checking your System Time</h3>
+		<p>The best way I have found so far is to use the site <a target="_blank" href="https://time.is">time.is</a>, which will perform a check to compare your system time with that of their servers which are kept fairly accurate.</p>
+		<p><img src="desynced.png" alt="Screenshot of time.is showing that system time is out of sync."></p>
+		<p><img src="synced.png" alt="Screenshot of time.is showing that system time is in sync."></p>
+
+		<h3>Resyncing your System Time</h3>
+		<p>On Windows you can find options for time syncronisation in the system settings. You can find screenshots below of what this menu looks like and where it can be found. But generally it can be found under "Time & Language" > "Date & Time" > "Syncronize your clock".</p>
+
+		<table>
+			<tr>
+				<th><h4 style="text-align: center">Windows 10</h4></th>
+				<th><h4 style="text-align: center">Windows 11</h4></th>
+			</tr>
+			<tr>
+				<td><img height="512px" src="windows10.png" alt='Windows 10 "Date & Time" Settings'></td>
+				<td><img width="512px" src="windows11.png" alt='Windows 11 "Date & Time" Settings'></td>
+			</tr>
+		</table>
+
+		<p>On Linux, most distributions have fairly good date time syncronisation out of the box, so you probably won't really have any issues. If you are, then you will have to do your own research as distributions can vary enough that giving universal instructions is difficult. <i>If you are on a more DIY distribution such as Arch Linux, I would recommend using <a target="_blank" href="https://wiki.archlinux.org/title/Chrony">Chrony</a>.</i></p>
+
+		<p>If instructions for your operating system are not listed here, a reminder that Google exists, and you can easily find answers there with a search query like "macos resync date time".</p>
+
+		<h3>Still having disconnects?</h3>
+		<p>If you have resynced your system time, consider contacting whoever manages the server you play on, the time may be desynced server side causing the same issue. Beyond this, there really isn't much you can do.</p>
+
+		<h5 style="text-align: center"><a href="information.html">Questions and Information</a></h5>
+
+		<h6 style="text-align: center"><i>This is the absolute peak of web design.</i></h6>
+
+		<h6 style="text-align: center">This work is licensed under <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.</h6>
+	</body>
+</html>
